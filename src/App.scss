@@ -66,8 +66,38 @@ a{
   text-decoration: none;
 }
 
+h1{
+  font-size: $f-32;
+}
 .boundary{
   padding: 0px 24px;
   width: 100%;
   max-width: $page-max-width;
+}
+
+button{
+  position: relative;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:hover{
+    &:before{
+      display: block;
+    }
+  }
+
+  &:before{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.2);
+    display: none;
+  }
 }

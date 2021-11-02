@@ -1,11 +1,15 @@
 import React from "react";
-import mainLogo from "../general/img/main.png";
+import "./Home.scss";
+import Intro from "./components/Intro";
+import ProductSummary from "./components/ProductSummary";
+
 
 const Home = () => {
   return (
     <div className="page home">
-      <h1>Home</h1>
-      <img src={mainLogo} alt="main illustration"/>
+      <Intro/>
+      <ProductSummary/>
+
     </div>
   )
 }
