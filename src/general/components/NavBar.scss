@@ -1,0 +1,23 @@
+@import "src/general/sizes";
+
+.nav-bar{
+  display: flex;
+  justify-content: center;
+
+  .boundary{
+    height: $nav-bar-height;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+      height: 32px;
+    }
+    .menu-container{
+      display: flex;
+      gap: 12px;
+      align-items: center;
+
+    }
+  }
+}
