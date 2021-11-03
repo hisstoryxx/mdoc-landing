@@ -143,6 +143,9 @@
 
       .section-img{
         width: 100%;
+        .fade-layer{
+          display: none;
+        }
       }
       .section-content{
         padding: 40px 0px;

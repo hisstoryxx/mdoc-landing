@@ -78,6 +78,13 @@
           align-items: center;
         }
       }
+      .section-menu{
+        .menu-group{
+          *{
+            text-align: center;
+          }
+        }
+      }
     }
   }
 }
