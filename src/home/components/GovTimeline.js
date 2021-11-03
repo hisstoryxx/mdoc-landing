@@ -21,15 +21,17 @@ const timeline = {
   ],
 }
 const GovTimeline = () => {
+  const introTitle = "더 많은 분들이 \n편리함을 누리실 수 있도록";
+  const timelineTitle = "보건복지부 재택의료 \n시범 사업 타임라인"
   return (
     <div className="gov-timeline">
       <div className="section-intro">
-        <h1>더 많은 분들이 편리함을 누리실 수 있도록</h1>
+        <h1>{introTitle}</h1>
         <p>정부의 재택관리 시범사업 확장에 따라,<br/>
           mDoc은 <strong>복막투석을 시작</strong>으로 점차 더 많은 분들께 도움을 드리고자 합니다</p>
       </div>
       <div className="section-timeline">
-        <h2 className="title">보건복지부 재택의료 시범 사업 타임라인</h2>
+        <h2 className="title">{timelineTitle}</h2>
         <div className="container-timeline">
           {Object.keys(timeline).map((yearKey, i) => {
             return (

@@ -4,11 +4,12 @@ import severance from "../../general/img/severance.png";
 import "./Intro.scss";
 
 const Intro = () => {
+  const title = "안전하고 편리한\n 비대면 재택의료 플랫폼"
   return (
     <div className="intro">
       <img className="main-logo" src={mainLogo} alt="main illustration"/>
       <div className="title-wrapper">
-        <h1>안전하고 편리한 비대면 재택의료 플랫폼</h1>
+        <h1>{title}</h1>
       </div>
       <div className="partner">
         <span>공동 연구 개발</span>

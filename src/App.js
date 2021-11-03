@@ -11,7 +11,7 @@ import "./App.scss";
 function App() {
   return (
     <Router>
-      <div>
+      <div className={"app"}>
         <NavBar/>
         <Switch>
           <Route path={"/"} exact component={Home}/>

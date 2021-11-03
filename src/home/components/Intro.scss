@@ -1,4 +1,6 @@
 @import "src/general/colors";
+@import "src/general/sizes";
+
 .intro{
   display: flex;
   flex-direction: column;
@@ -16,8 +18,10 @@
     $border-style: 2px solid $l-20;
     border-top: $border-style;
     border-bottom: $border-style;
+
     h1{
       color: $sub-content;
+      text-align: center;
     }
   }
   .partner{
@@ -32,6 +36,19 @@
     img{
       height: 40px;
 
+    }
+  }
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .intro{
+    .title-wrapper{
+      h1{
+        white-space: pre-line;
+      }
+    }
+    .partner{
+      flex-direction: column;
     }
   }
 }

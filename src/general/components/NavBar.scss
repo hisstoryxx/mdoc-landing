@@ -2,8 +2,15 @@
 @import "src/general/colors";
 
 .nav-bar{
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+
   display: flex;
   justify-content: center;
+  background-color: rgba(255,255,255,0.8);
 
   .boundary{
     height: $nav-bar-height;
@@ -36,6 +43,7 @@
         position: relative;
         padding: 0px 12px;
         color: $main-content;
+
         &.label{
           color: $sub-content;
           pointer-events: none;
@@ -59,6 +67,52 @@
           display: none;
         }
       }
+      .product-menus{
+        display: flex;
+      }
     }
   }
 }
+
+@media (max-width: $tablet-breakpoint) {
+  .nav-bar{
+    .boundary{
+      justify-content: center;
+      .logo{
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .nav-bar{
+    .boundary{
+      justify-content: center;
+      .logo{
+        display: none;
+      }
+      .menu-container{
+        .menu{
+          padding: 0px 8px;
+        }
+        //align-items: flex-end;
+        .divider{
+          //height: 40px;
+        }
+        .product-menus{
+          //flex-direction: column;
+          //align-items: center;
+          .menu.label{
+            //width: 100%;
+            //text-align: center;
+            //margin-bottom: 4px;
+            //color: $placeholder;
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+

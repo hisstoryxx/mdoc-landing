@@ -27,7 +27,7 @@ const renderDownloadButton = (type) => {
     return (
       <button className="btn-download-desktop-app">
         <img src={downloadIcon} alt=""/>
-        데스크탑 앱 다운로드
+        <span>데스크탑 앱 다운로드</span>
       </button>
     )
   else

@@ -1,10 +1,15 @@
 @import "src/general/colors";
+@import "src/general/sizes";
 
 .footer{
   padding: 80px 0px;
   width: 100%;
   display: flex;
   justify-content: center;
+
+  a:hover{
+    opacity: 0.7;
+  }
 
   &.tone-down{
     background-color: $l-5;
@@ -58,3 +63,21 @@
   }
 }
 
+@media (max-width: $tablet-breakpoint) {
+  .footer{
+    .boundary{
+      flex-direction: column-reverse;
+
+      .section-company-info{
+
+        margin-top: 60px;
+        border-top: 1px solid $l-20;
+        padding-top: 60px;
+        align-items: center;
+        .info-group{
+          align-items: center;
+        }
+      }
+    }
+  }
+}
