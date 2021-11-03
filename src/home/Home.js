@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.scss";
 import Intro from "./components/Intro";
 import ProductSummary from "./components/ProductSummary";
+import GovTimeline from "./components/GovTimeline";
 
 
 const Home = () => {
@@ -9,7 +10,7 @@ const Home = () => {
     <div className="page home">
       <Intro/>
       <ProductSummary/>
-
+      <GovTimeline/>
     </div>
   )
 }

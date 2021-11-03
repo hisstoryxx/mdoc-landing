@@ -1,0 +1,122 @@
+@import "src/general/colors";
+@import "src/general/sizes";
+
+.gov-timeline{
+  width: 100%;
+  .section-intro{
+    padding: 80px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    p{
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+  .section-timeline{
+    padding: 60px 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $l-5;
+
+    .title{
+      color: $sub-content;
+    }
+
+    .container-timeline{
+      border-top: 1px solid $l-30;
+      padding-top: 24px;
+      margin-top: 24px;
+
+      display: flex;
+      .container-year{
+        position: relative;
+        width: 180px;
+        display: flex;
+        flex-direction: column;
+
+        .bullet{
+          position: relative;
+          $bullet-size: 8px;
+          margin-right: 16px;
+          width: $bullet-size;
+          height: $bullet-size;
+          border-radius: 50%;
+          background-color: $mdoc-blue;
+
+          &:before{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 100%;
+            margin: auto;
+            width: 8px;
+            height: 1px;
+            background-color: $mdoc-blue;
+            content: "";
+          }
+        }
+
+        .year-title, .topic{
+          &:before{
+            position: absolute;
+            left: 2px;
+            top: 14px;
+            height: calc(100% + 12px);
+            width: 1px;
+            border-right: 1px dashed $mdoc-blue;
+            content: "";
+          }
+        }
+
+        .year-title{
+          position: relative;
+          display: flex;
+          align-items: center;
+
+
+
+          .bullet:before{
+            display: none;
+          }
+
+          span{
+            color: $placeholder;
+            font-size: $f-25;
+            font-weight: bold;
+          }
+        }
+
+        .timeline{
+          margin-top: 12px;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+
+          .topic{
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            &:last-child{
+              &:before{
+                display: none;
+              }
+            }
+
+            .month{
+              width: 40px;
+              color: $placeholder;
+            }
+            .name{
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
