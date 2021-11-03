@@ -5,6 +5,7 @@ import Home from "./home/Home";
 import Contact from "./contact/Contact";
 import ProductDesktop from "./product-desktop/ProductDesktop";
 import ProductMobile from "./product-mobile/ProductMobile";
+import Footer from "./general/components/Footer";
 import "./App.scss";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path={"/product/desktop"} component={ProductDesktop}/>
           <Route path={"/contact"} component={Contact}/>
         </Switch>
+        <Footer/>
       </div>
 
     </Router>

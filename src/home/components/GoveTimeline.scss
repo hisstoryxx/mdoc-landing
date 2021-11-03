@@ -27,14 +27,15 @@
     }
 
     .container-timeline{
-      border-top: 1px solid $l-30;
+      border-top: 2px solid $l-30;
       padding-top: 24px;
-      margin-top: 24px;
+      margin-top: 16px;
 
       display: flex;
+      gap: 24px;
       .container-year{
         position: relative;
-        width: 180px;
+        min-width: 150px;
         display: flex;
         flex-direction: column;
 

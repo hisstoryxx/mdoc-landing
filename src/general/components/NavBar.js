@@ -5,7 +5,6 @@ import "./NavBar.scss";
 
 const NavBar = () => {
   const location = useLocation();
-  console.log(location.pathname);
   const pathNameArray = location.pathname.split("/");
   const menuName = pathNameArray[pathNameArray.length - 1];
 
