@@ -3,8 +3,7 @@ import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import NavBar from "./general/components/NavBar";
 import Home from "./home/Home";
 import Contact from "./contact/Contact";
-import ProductDesktop from "./product-desktop/ProductDesktop";
-import ProductMobile from "./product-mobile/ProductMobile";
+import Product from "./product/Product";
 import Footer from "./general/components/Footer";
 import "./App.scss";
 
@@ -15,8 +14,8 @@ function App() {
         <NavBar/>
         <Switch>
           <Route path={"/"} exact component={Home}/>
-          <Route path={"/product/mobile"} component={ProductMobile}/>
-          <Route path={"/product/desktop"} component={ProductDesktop}/>
+          <Route path={"/product/mobile"} component={Product}/>
+          <Route path={"/product/desktop"} component={Product}/>
           <Route path={"/contact"} component={Contact}/>
         </Switch>
         <Footer/>

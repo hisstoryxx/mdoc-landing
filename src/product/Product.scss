@@ -1,0 +1,67 @@
+@import "src/general/colors";
+
+.page.product{
+
+  .product-header {
+    display: flex;
+    justify-content: center;
+    background-color: $l-5;
+    height: 300px;
+
+    .boundary{
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+
+      .section-img {
+        position: relative;
+
+        flex: 1;
+        background: url("../general/img/usage-mobile_optimized.jpg") center no-repeat;
+        background-size: cover;
+
+        display: flex;
+
+        .fade-layer{
+          position: absolute;
+          width: 50%;
+          height: 100%;
+          left: 0;
+          background: linear-gradient(90deg, rgba(250,250,250,1), rgba(250,250,250,0));
+        }
+      }
+      .section-content{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        span, p{
+          font-size: 16px;
+        }
+        span{
+          color: $sub-content;
+        }
+        p{
+          white-space: pre-line;
+        }
+      }
+    }
+    &.desktop{
+      .section-img {
+        background: url("../general/img/usage-desktop_optimized.jpg") center no-repeat;
+        background-size: cover;
+      }
+    }
+
+  }
+  .product-body{
+    padding: 40px;
+
+    display: flex;
+    justify-content: center;
+    h1{
+      opacity: 0.3;
+    }
+  }
+}
