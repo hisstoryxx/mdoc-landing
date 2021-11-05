@@ -56,12 +56,37 @@
 
   }
   .product-body{
-    padding: 40px;
+    padding: 80px;
 
     display: flex;
+    flex-direction: column;
+    gap: 40px;
+
     justify-content: center;
-    h1{
-      opacity: 0.3;
+
+    .feature-item{
+
+      &:nth-child(even){
+        flex-direction: row-reverse;
+      }
+
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+
+      .feature-images{
+        img{
+          height:200px;
+        }
+      }
+      .feature-content{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        p{
+          white-space: pre-wrap;
+        }
+      }
     }
   }
 }
