@@ -1,5 +1,5 @@
-import React from "react";
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import React, {useEffect} from "react";
+import {Switch, Route, useHistory} from "react-router-dom";
 import NavBar from "./general/components/NavBar";
 import Home from "./home/Home";
 import Contact from "./contact/Contact";
@@ -8,20 +8,30 @@ import Footer from "./general/components/Footer";
 import "./App.scss";
 
 function App() {
-  return (
-    <Router>
-      <div className={"app"}>
-        <NavBar/>
-        <Switch>
-          <Route path={"/"} exact component={Home}/>
-          <Route path={"/product/mobile"} component={Product}/>
-          <Route path={"/product/desktop"} component={Product}/>
-          <Route path={"/contact"} component={Contact}/>
-        </Switch>
-        <Footer/>
-      </div>
+  let history = useHistory();
 
-    </Router>
+  //scroll to top when url is changed
+  useEffect(() => {
+    const unListen = history.listen(() => {
+      window.scrollTo(0, 0);
+    });
+    return () => {
+      unListen();
+    }
+  }, []);
+
+  return (
+    <div className={"app"}>
+      <NavBar/>
+
+      <Switch>
+        <Route path={"/"} exact component={Home}/>
+        <Route path={"/product/mobile"} component={Product}/>
+        <Route path={"/product/desktop"} component={Product}/>
+        <Route path={"/contact"} component={Contact}/>
+      </Switch>
+      <Footer/>
+    </div>
   );
 }
 
