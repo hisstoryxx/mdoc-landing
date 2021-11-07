@@ -97,6 +97,10 @@ button{
   background-color: transparent;
   cursor: pointer;
   overflow: hidden;
+  &:disabled{
+    opacity: 0.3;
+    pointer-events: none;
+  }
 
   &:hover{
     &:before{
