@@ -39,6 +39,7 @@ const Contact = () => {
           <button className="btn-submit"
                   disabled={!title || !description || !userContact}
                   onClick={() => {
+                    //need to send a inquiry mail with title, description, userContact
                     window.alert(`접수되었습니다`);
                     setTitle("")
                     setDescription("")

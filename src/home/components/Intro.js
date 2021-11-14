@@ -13,7 +13,8 @@ const Intro = () => {
       </div>
       <div className="partner">
         <span>공동 연구 개발</span>
-        <img src={severance} alt=""/>
+        <span>세브란스 병원</span>
+        {/*<img src={severance} alt=""/>*/}
       </div>
     </div>
   )

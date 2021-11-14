@@ -27,16 +27,19 @@
   .partner{
     margin-top: 24px;
     display: flex;
-    gap: 16px;
-    align-items: center;
-    span{
-      color: $sub-content;
-      font-weight: bold;
-    }
-    img{
-      height: 40px;
 
+    align-items: center;
+
+    span{
+      padding: 0px 12px;
+      font-weight: bold;
+      color: $mdoc-blue;
+      &:first-child{
+        color: $sub-content;
+        border-right: 2px solid $l-30;
+      }
     }
+
   }
 }
 
@@ -49,6 +52,8 @@
     }
     .partner{
       flex-direction: column;
+      gap: 6px;
+      span{border: none !important;}
     }
   }
 }
