@@ -1,6 +1,7 @@
 import React from "react";
 import {Link, useLocation} from "react-router-dom";
 import hcLogo from "../img/logo-hc.png";
+import logo from "../img/logo-type.png";
 import "./NavBar.scss";
 
 const NavBar = () => {
@@ -11,7 +12,7 @@ const NavBar = () => {
   return (
     <div className={"nav-bar"}>
       <div className="boundary">
-        <img className="logo" src={hcLogo} alt=""/>
+        <img className="logo" src={logo} alt=""/>
         <div className={`menu-container ${menuName ? menuName : 'home'}`}>
           <Link className="menu home" to={"/"}>홈</Link>
           <div className="divider"/>
