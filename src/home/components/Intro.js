@@ -1,6 +1,6 @@
 import React from "react"
 import mainLogo from "../../general/img/main.png";
-import severance from "../../general/img/severance.png";
+// import severance from "../../general/img/severance.png";
 import "./Intro.scss";
 
 const Intro = () => {
