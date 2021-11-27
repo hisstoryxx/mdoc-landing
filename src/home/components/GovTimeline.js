@@ -28,7 +28,7 @@ const GovTimeline = () => {
       <div className="section-intro">
         <h1>{introTitle}</h1>
         <p>정부의 재택관리 시범사업 확장에 따라,<br/>
-          엔닥홈케어는 <strong>복막투석을 시작</strong>으로 점차 더 많은 분들께 서비스를 제공할 예정입니다</p>
+          엠닥홈케어는 <strong>복막투석을 시작</strong>으로 점차 더 많은 분들께 서비스를 제공할 예정입니다</p>
       </div>
       <div className="section-timeline">
         <h2 className="title">{timelineTitle}</h2>
