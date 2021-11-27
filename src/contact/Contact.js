@@ -15,7 +15,7 @@ const Contact = () => {
       <div className="contact-form">
         <div className="form-header">
           <h1>문의하기</h1>
-          <p>제휴, 제품 사용 등 구금하신 점들을 편하게 문의해주세요</p>
+          <p>제휴, 제품 사용, 채용 등 궁금하신 점들을 편하게 문의해주세요</p>
         </div>
         <div className="form-body">
           <div className="input-item">

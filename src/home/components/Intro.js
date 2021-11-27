@@ -12,8 +12,8 @@ const Intro = () => {
         <h1>{title}</h1>
       </div>
       <div className="partner">
-        <span>공동 연구 개발</span>
-        <span>세브란스 병원</span>
+        <span>공동연구개발</span>
+        <span>세브란스병원</span>
         {/*<img src={severance} alt=""/>*/}
       </div>
     </div>

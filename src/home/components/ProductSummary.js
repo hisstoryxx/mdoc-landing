@@ -8,16 +8,16 @@ export const productData = [
   {
     type: "desktop",
     productName: "의료진용 데스크탑 앱",
-    title: "더욱 효율적인 환자 상담",
-    description: "사전 문진, 자동 리포트 작성으로 반복되는 업무를 줄여\n 더욱 효율적인 환자 상담이 가능합니다",
+    title: "더욱 효율적인 환자상담",
+    description: "사전문진, 자동 리포트 작성으로 반복되는 업무를 줄여\n 환자상담에만 집중할 수 있는 환경을 제공합니다",
     learnMoreUrl: "/product/desktop",
     downloadLinks: ["https://www.google.com"]
   },
   {
     type: "mobile",
     productName: "환자용 모바일 앱",
-    title: "더욱 체계적인 질병 관리",
-    description: "체계적인 상담 시스템과 다양한 교육 자료로\n 환자분들의 질병관리를 돕습니다",
+    title: "체계적인 자기주도적 질병관리",
+    description: "나의 건강데이터 관리는 물론, 체계적인 상담 시스템과\n 다양한 교육 자료로 환자분들의 질병관리를 돕습니다",
     learnMoreUrl: "/product/mobile",
     downloadLinks: ["https://www.google.com", "https://www.google.com"]
   }

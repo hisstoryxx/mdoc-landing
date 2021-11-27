@@ -69,7 +69,7 @@
       .feature-item {
         .feature-images {
           img{
-            border-radius: 12px;
+            border-radius: 8px;
             border: 1px solid $l-20;
           }
         }
@@ -128,6 +128,9 @@
           white-space: pre-wrap;
           font-size: 16px;
           color: $sub-content;
+          &.sub{
+            opacity: 0.5;
+          }
         }
       }
     }
