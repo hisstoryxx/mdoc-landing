@@ -52,10 +52,10 @@ const Footer = () => {
               <span>424-81-02294</span>
             </div>
           </div>
-          <div className="info-group">
-            <Link>개인정보 처리방침</Link>
-            <Link>이용약관</Link>
-          </div>
+          {/*<div className="info-group">*/}
+          {/*  <Link>개인정보 처리방침</Link>*/}
+          {/*  <Link>이용약관</Link>*/}
+          {/*</div>*/}
         </div>
         <div className="section-menu">
           {menuGroups.map( (menuGroup, index) => {
