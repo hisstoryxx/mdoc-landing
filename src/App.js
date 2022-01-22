@@ -3,6 +3,7 @@ import {Switch, Route, useHistory} from "react-router-dom";
 import NavBar from "./general/components/NavBar";
 import Home from "./home/Home";
 import Contact from "./contact/Contact";
+import Check from "./check/Check";
 import Product from "./product/Product";
 import Footer from "./general/components/Footer";
 import "./App.scss";
@@ -29,8 +30,12 @@ function App() {
         <Route path={"/product/mobile"} component={Product}/>
         <Route path={"/product/desktop"} component={Product}/>
         <Route path={"/contact"} component={Contact}/>
+        <Route path={"/check/user"} component={Check}/>
+        <Route path={"/check/data"} component={Check}/>
+        <Route path={"/check/agree"} component={Check}/>
       </Switch>
       <Footer/>
+    
     </div>
   );
 }
