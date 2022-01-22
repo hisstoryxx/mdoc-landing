@@ -1,8 +1,9 @@
 import React, {useState} from "react";
 import "./Check.scss";
 import {useLocation} from "react-router-dom";
-// import Table from 'react-bootstrap/Table';
+
 import agreeTable from "./agreeTable.png"
+import Table from 'react-bootstrap/Table'
 
 const Check = () => {
 
@@ -27,52 +28,52 @@ const Check = () => {
   let title
   let content
 
-  // const agreeTable = () => {
+  const agreeTable = () => {
 
-  //   return(
-  //     <div className="table-responsive" style={{ width: '100%' }}>
-  //         <Table striped bordered hover>
-  //           <thead>
-  //             <tr>
-  //               <th><input type="checkbox" /></th>
-  //               <th>이름</th>
-  //               <th>환자번호</th>
-  //               <th>나이</th>
-  //               <th>성별</th>
-  //               <th>생년월일</th>
-  //               <th>연락처</th>
-  //               {/* <th>보호자 연락처</th>
-  //               <th>주소</th> */}
-  //               <th data-tip data-for ='confirm'>가입여부</th>
-  //               <th></th>
-  //             </tr>
-  //           </thead>
-  //           {/* <tbody className="body">
-  //             {user?.map(c => (
-  //               <tr key={c.id}>
-                  
-  //                 <td><input type="checkbox" /></td>
-  //                 <td>{c.name}</td>
-  //                 <td className={c.patientNumber === null ? 'patientNumber' : null}>
-  //                   {c.patientNumber === null 
-  //                   ? '!!환자번호를 등록해주세요'
-  //                   : c.patientNumber}</td>
-  //                 <td>
-  //                   {(c?.born?.substring(0,1) === '0' || c?.born?.substring(0,1) === '1' || c?.born?.substring(0,1) === '2') 
-  //                 ? ((year-2000) - c?.born?.substring(0,2)+1) 
-  //                 : ((100+(year-2000)) - c?.born?.substring(0,2)+1) }</td>
-  //                 <td>{ c?.born?.substring(7) === "1" || c?.born?.substring(7) === "3" 
-  //                 ? '남':'여'}</td>
-  //                 <td>{c?.born?.substring(0,6)}</td>
+    return(
+          <Table  >
+            <thead>
+              <tr>
+                <th>수집 목적</th>
+                <th>수집 항목</th>
+                <th>보유 및 이용 기간</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>회원가입</td>
+              <td>이름, 환자번호, 휴대폰번호, 비밀번호, 생년월일, 성별 </td>
+              <td rowSpan={4}>회원탈퇴 또는 목적 달성시까지,
+              법령에 따른 보존기간이 있는 경우 해당 기간 만료시까지
+              </td>
+            </tr>
+            <tr>
+              <td>서비스 제공</td>
+              <td><div className="div_table">사전 문진 데이터(본인 여부, 체중, 평균 제수량(cc), 
+                투석액 주입상태, 투석액 배액 상태, 도관 부위 이상, 환자 상태, 
+                초기배액량, 총 제수량, 평균 저류시간, 투석방식, 투석액 농도), 
+                상담정보(정기상담 내용, 비정기상담 내용), 의료진 예약 시간</div></td>
+              
+            </tr>
+            <tr>
+              <td>고객센터, 민원 등 관리</td>
+              <td >고객센터 이용 시 고객센터 문의 내용</td>
+            </tr>
+            <tr>
+              <td>불량 회원의 부정 이용 방지</td>
+              <td >서비스 이용기록, 방문기록, IP 주소, 불량 이용 기록</td>
+            </tr>
+            <tr>
+              <td colSpan={4}>귀하는 회사의 개인정보 수집 및 이용에 대하여 동의를 거부할 권리가 있습니다. 
+                다만, 동의 거부 시 회원가입이 불가능할 수 있습니다.
+                </td>
+            </tr>
+          </tbody>
 
-                  
-  //               </tr>
-  //             ))}
-  //           </tbody> */}
-  //         </Table>
-  //       </div>
-  //   )
-  // }
+          </Table>
+        
+    )
+  }
 
   if(platform === "user"){
     title = '이용약관'
@@ -378,16 +379,17 @@ const Check = () => {
 
   else if (platform === "agree") {
     title = '개인정보수집 및 이용 동의'
-    content = `
-    수집 목적	수집 항목	보유 및 이용 기간
-    회원 가입 및 회원 관리	이름, 환자번호, 휴대폰번호, 비밀번호, 생년월일, 성별 	회원탈퇴 또는 목적 달성시까지,
-    법령에 따른 보존기간이 있는 경우 해당 기간 만료시까지
-    서비스 제공	사전 문진 데이터(본인 여부, 체중, 평균 제수량(cc), 투석액 주입상태, 투석액 배액 상태, 도관 부위 이상, 환자 상태, 초기배액량, 총 제수량, 평균 저류시간, 투석방식, 투석액 농도), 상담정보(정기상담 내용, 비정기상담 내용), 의료진 예약 시간	
-    고객센터, 민원 등 관리	고객센터 이용 시 고객센터 문의 내용	
-    불량 회원의 부정 이용 방지	서비스 이용기록, 방문기록, IP 주소, 불량 이용 기록	
-    귀하는 회사의 개인정보 수집 및 이용에 대하여 동의를 거부할 권리가 있습니다. 
-    다만, 동의 거부 시 회원가입이 불가능할 수 있습니다.
-    `
+    content = agreeTable
+    // content = `
+    // 수집 목적	수집 항목	보유 및 이용 기간
+    // 회원 가입 및 회원 관리	이름, 환자번호, 휴대폰번호, 비밀번호, 생년월일, 성별 	회원탈퇴 또는 목적 달성시까지,
+    // 법령에 따른 보존기간이 있는 경우 해당 기간 만료시까지
+    // 서비스 제공	사전 문진 데이터(본인 여부, 체중, 평균 제수량(cc), 투석액 주입상태, 투석액 배액 상태, 도관 부위 이상, 환자 상태, 초기배액량, 총 제수량, 평균 저류시간, 투석방식, 투석액 농도), 상담정보(정기상담 내용, 비정기상담 내용), 의료진 예약 시간	
+    // 고객센터, 민원 등 관리	고객센터 이용 시 고객센터 문의 내용	
+    // 불량 회원의 부정 이용 방지	서비스 이용기록, 방문기록, IP 주소, 불량 이용 기록	
+    // 귀하는 회사의 개인정보 수집 및 이용에 대하여 동의를 거부할 권리가 있습니다. 
+    // 다만, 동의 거부 시 회원가입이 불가능할 수 있습니다.
+    // `
   }
    
 
@@ -405,16 +407,22 @@ const Check = () => {
         <div className="form-body">
           <div className="input-item">
             {/* <span>엠닥이용약관</span> */}
-            {platform === "agree" ? 
-            <img src={agreeTable} alt="" />
+             {platform === "agree" ? 
+             <div className="table-container">
+             {agreeTable()}  
+             </div>
             :
             <textarea type="text"
             style={{backgroundColor:'white'}}
                    value=
                    {content}
                    />
-            } 
+            }  
+             
+             
+                 
           </div>
+          
         </div>
       </div>
     </div>

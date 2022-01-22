@@ -5,12 +5,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 
-  p{
-    font-size: 16px;
-    text-align: center;
-
-  }
 
   .contact-intro{
     position: relative;
@@ -91,4 +87,117 @@
       }
     }
   }
+}
+
+.table-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-color: #F5F5F5;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10;
+
+  th {
+    position: relative;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: $mdoc-ui-blue;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 8px;
+    padding-bottom: 5px;
+    border-bottom-color: black;
+    border-width: 2px;
+    border-bottom-style: solid;
+  
+  }
+  
+  td {
+    position: relative;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #323232;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    border-bottom-color: #F5F5F5;
+    border-width: 2px;
+    border-bottom-style: solid;
+    padding-bottom: 10px;
+   
+    // margin: 0px 8px;
+  }
+  
+  
+  .address_td{
+    max-width: 300px;
+    word-break:break-all;
+  }
+  
+  Table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    width: 90%;
+   
+  }
+  
+  .tooltip{
+    flex-direction: column;
+  
+  }
+  
+  .info_icon{
+    width: 16px;
+    height: 16px;
+    flex: none;
+    order: 10;
+    flex-grow: 0;
+    margin: 0px 16px;
+  }
+  .join_icon{
+    width: 16px;
+    height: 16px;
+    flex: none;
+    order: 10;
+    flex-grow: 0;
+    margin: 0px 16px;
+  
+  }
+  
+  .confirm_icon{
+    width: 16px;
+    height: 16px;
+    flex: none;
+    order: 10;
+    flex-grow: 0;
+    margin: 0px 13px;
+  
+  }
+  .user{
+    width: 12px;
+    height: 12px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 6px;
+  
+  }
+  
+  .patientNumber{
+    color: red;
+  }
+  
 }
