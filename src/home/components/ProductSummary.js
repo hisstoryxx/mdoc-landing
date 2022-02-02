@@ -35,11 +35,11 @@ const renderDownloadButton = (type) => {
     return (
       <>
         <div className="btn-wrapper">
-          <button className="btn-download-mobile-app android"/>
+          <button className="btn-download-mobile-app android" onClick={() => window.open('https://play.google.com/store/apps/details?id=com.choro94.mDochome', '_blank')}/>
           <span>안드로이드 앱 다운로드</span>
         </div>
         <div className="btn-wrapper">
-          <button className="btn-download-mobile-app ios"/>
+          <button className="btn-download-mobile-app ios" onClick={() => window.open('https://apps.apple.com/kr/app/%EC%97%A0%EB%8B%A5%ED%99%88%EC%BC%80%EC%96%B4/id1606627654?l', '_blank')}/>
           <span>IOS 앱 다운로드</span>
         </div>
       </>
