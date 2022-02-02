@@ -12,7 +12,8 @@ const NavBar = () => {
   return (
     <div className={"nav-bar"}>
       <div className="boundary">
-        <img className="logo" src={logo} alt=""/>
+        <Link to={"/"}>
+        <img className="logo" src={logo} alt=""/></Link>
         <div className={`menu-container ${menuName ? menuName : 'home'}`}>
           <Link className="menu home" to={"/"}>홈</Link>
           <div className="divider"/>
