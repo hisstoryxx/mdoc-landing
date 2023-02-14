@@ -24,6 +24,7 @@
     "predeploy": "npm run build",
     "deploy": "cp build/index.html build/404.html && gh-pages -d build"
   },
+  
   "eslintConfig": {
     "extends": [
       "react-app",
