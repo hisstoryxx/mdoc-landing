@@ -2,7 +2,7 @@
   "name": "mdoc-landing",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://m-doc.io/",
+  "homepage": "https://hisstoryxx.github.io/mdoc-landing/check/data",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -24,7 +24,7 @@
     "predeploy": "npm run build",
     "deploy": "cp build/index.html build/404.html && gh-pages -d build"
   },
-  
+
   "eslintConfig": {
     "extends": [
       "react-app",
