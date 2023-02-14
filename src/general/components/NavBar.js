@@ -14,19 +14,7 @@ const NavBar = () => {
       <div className="boundary">
         <Link to={"/"}>
         <img className="logo" src={logo} alt=""/></Link>
-        <div className={`menu-container ${menuName ? menuName : 'home'}`}>
-          <Link className="menu home" to={"/"}>홈</Link>
-          <div className="divider"/>
-          <div className="product-menus">
-            <span className="menu label">제품 소개</span>
-            <div className="menu-wrapper">
-              <Link className="menu mobile" to={"/product/mobile"}>환자 • 보호자용</Link>
-              <Link className="menu desktop" to={"/product/desktop"}>의료진용</Link>
-            </div>
-          </div>
-          <div className="divider"/>
-          <Link className="menu contact" to={"/contact"}>문의</Link>
-        </div>
+        
       </div>
     </div>
   )

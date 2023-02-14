@@ -54,26 +54,10 @@ const Footer = () => {
           </div>
           <div className="info-group">
            <Link to={"/check/data"}>개인정보 처리방침</Link>
-           <Link to={"/check/agree"}>개인정보 수집 및 이용 동의</Link>
-           <Link to={"/check/user"}>이용약관</Link>
+           
           </div>
         </div>
-        <div className="section-menu">
-          {menuGroups.map( (menuGroup, index) => {
-            return (
-              <div className="menu-group" key={index}>
-                <div className="title">
-                  {menuGroup.title}
-                </div>
-                {menuGroup.menus.map( (menu, j) => {
-                  return (
-                    <Link to={menu.linkUrl} key={j}>{menu.name}</Link>
-                  )
-                })}
-              </div>
-            )
-          })}
-        </div>
+       
       </div>
     </div>
   )

@@ -27,14 +27,14 @@ function App() {
       <NavBar/>
 
       <Switch>
-      
+{/*       
         <Route path={"/"} exact component={Home}/>
         <Route path={"/product/mobile"} component={Product}/>
         <Route path={"/product/desktop"} component={Product}/>
         <Route path={"/contact"} component={Contact}/>
-        <Route exact path={"/check/user"} component={Check}/>
-        <Route exact path={"/check/data"} component={Check}/>
-        <Route exact path={"/check/agree"} component={Check}/>
+        <Route exact path={"/check/user"} component={Check}/> */}
+        <Route path={"/"} component={Check}/>
+        {/* <Route exact path={"/check/agree"} component={Check}/> */}
       
       </Switch>
       <Footer/>
