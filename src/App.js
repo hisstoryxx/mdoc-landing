@@ -1,10 +1,8 @@
 import React, {useEffect} from "react";
 import {Switch, Route, useHistory, Router} from "react-router-dom";
 import NavBar from "./general/components/NavBar";
-import Home from "./home/Home";
-import Contact from "./contact/Contact";
+
 import Check from "./check/Check";
-import Product from "./product/Product";
 import Footer from "./general/components/Footer";
 import "./App.scss";
 
