@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import "./ProductSummary.scss";
 import downloadIcon from "../../general/img/icon/download.svg";
 import ChevronRightRound from "../../general/img/icon/chevron-right-round.svg";
+import { Alert } from "bootstrap";
 
 export const productData = [
   {
@@ -23,10 +24,14 @@ export const productData = [
   }
 ]
 
+const downDesktop = () => {
+  alert('문의 메일로 연락 부탁드립니다.')
+}
+
 const renderDownloadButton = (type) => {
   if(type === "desktop")
     return (
-      <button className="btn-download-desktop-app">
+      <button className="btn-download-desktop-app" onClick={downDesktop}>
         <img src={downloadIcon} alt=""/>
         <span>데스크탑 앱 다운로드</span>
       </button>
