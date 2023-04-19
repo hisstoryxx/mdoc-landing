@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import {Switch, Route, useHistory, Router} from "react-router-dom";
 import NavBar from "./general/components/NavBar";
 import Home from "./home/Home";
@@ -9,6 +9,7 @@ import Footer from "./general/components/Footer";
 import "./App.scss";
 
 function App() {
+  const [start, setStart] = useState(false);
   let history = useHistory();
 
   //scroll to top when url is changed
@@ -21,9 +22,20 @@ function App() {
     }
   }, []);
 
+  const letsGo = () => {
+    setStart(!start);
+  }
   return (
-  
+    <>
+    {start == false ? 
+    <div onClick={letsGo} className={"landingContainer"}>
+      <div className={"LandingImg"}>
+      
+      </div>
+    </div>
+   :
     <div className={"app"}>
+      
       <NavBar/>
 
       <Switch>
@@ -37,8 +49,9 @@ function App() {
       </Switch>
       <Footer/>
     
-    </div>
-
+    </div> 
+    }
+    </>
   );
 }
 
