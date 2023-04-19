@@ -7,7 +7,18 @@ import desktop from "../general/img/desktop.png";
 const productDetail = {
   "mobile" : [
     {
-      title: "사전문진 & 메신저 정기상담",
+      title: "건강 기록",
+      description:
+        "건강기록을 루틴화하여 효율적인\n" +
+        "건강 기록이 가능합니다.\n" +
+        "혈압, 혈당, 복막투석으로 나누어진 카테고리를 제공하며\n" +
+        "기록된 데이터는 건강기록 분석탭에서 확인 가능합니다",
+      images : [
+        require("../general/img/mobile-product_test1.png")
+      ]
+    },
+    {
+      title: "의료진과 비대면 정기상담",
       description:
         "의료진과 정기상담을 시작하기 전에 사전문진으로 필요한 정보를 입력하여\n" +
         "더욱 빠르고 효과적인 상담이 가능합니다.\n" +
@@ -19,29 +30,29 @@ const productDetail = {
       ]
     },
     {
-      title: "간편한 정기상담 예약",
-      description: "예약 가능한 시간을 선택하여 내가 원하는 시간에\n" +
-        "정기상담을 진행할 수 있고, 언제든 변경할 수 있습니다",
+      title: "건강기록 분석",
+      description: "한눈에 보기 쉬운 그래프 형태의 분석 데이터를 확인할 수 있고\n" +
+        "변화과정 보기를 통해 기간 별 건강 추이가 가능합니다.",
       images : [
         require("../general/img/mobile-feature-2-1.png"),
         require("../general/img/mobile-feature-2-2.png")
       ]
     },
+    // {
+    //   title: "응급 상담",
+    //   description: "정기상담 이외에도 의료진에게 응급상담을 요청할 수 있습니다",
+    //   subDescription:
+    //     "현재 근무시간 기준으로 응급상담이 가능하며,\n" +
+    //     "추후 챗봇상담 기능이 추가될 예정입니다",
+    //   images : [
+    //     require("../general/img/mobile-feature-3-1.png"),
+    //     require("../general/img/mobile-feature-3-2.png")
+    //   ]
+    // },
     {
-      title: "응급 상담",
-      description: "정기상담 이외에도 의료진에게 응급상담을 요청할 수 있습니다",
-      subDescription:
-        "현재 근무시간 기준으로 응급상담이 가능하며,\n" +
-        "추후 챗봇상담 기능이 추가될 예정입니다",
-      images : [
-        require("../general/img/mobile-feature-3-1.png"),
-        require("../general/img/mobile-feature-3-2.png")
-      ]
-    },
-    {
-      title: "교육 컨텐츠 (준비중)",
+      title: "영상 교육콘텐츠",
       description:
-        "다양한 형태의 교육자료를 제공하여\n" +
+        "의료진의 검수를 받은 다양한 형태의 교육자료를 제공하여\n" +
         "나의 질병을 더욱 잘 이해하고\n" +
         "관리할 수 있도록 준비하고 있습니다",
       images : [
