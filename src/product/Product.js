@@ -9,8 +9,7 @@ const productDetail = {
     {
       title: "건강 기록",
       description:
-        "건강기록을 루틴화하여 효율적인\n" +
-        "건강 기록이 가능합니다.\n" +
+        "건강기록을 루틴화하여 효율적인 건강 기록이 가능합니다.\n" +
         "혈압, 혈당, 복막투석으로 나누어진 카테고리를 제공하며\n" +
         "기록된 데이터는 건강기록 분석탭에서 확인 가능합니다",
       images : [
@@ -26,7 +25,7 @@ const productDetail = {
         "나의 기록으로 남아 언제든 확인할 수 있습니다",
       images : [
         require("../general/img/mobile-feature-1-1.png"),
-        require("../general/img/mobile-feature-1-2.png")
+       
       ]
     },
     {
@@ -35,7 +34,7 @@ const productDetail = {
         "변화과정 보기를 통해 기간 별 건강 추이가 가능합니다.",
       images : [
         require("../general/img/mobile-feature-2-1.png"),
-        require("../general/img/mobile-feature-2-2.png")
+        
       ]
     },
     // {
