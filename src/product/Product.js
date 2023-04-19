@@ -19,13 +19,14 @@ const productDetail = {
     {
       title: "의료진과 비대면 정기상담",
       description:
-        "의료진과 정기상담을 시작하기 전에 사전문진으로 필요한 정보를 입력하여\n" +
+        "의료진과 정기상담을 시작하기 전에 \n" +
+        "사전문진으로 필요한 정보를 입력하여\n" +
         "더욱 빠르고 효과적인 상담이 가능합니다.\n" +
         "또한, 정기상담으로 주고받은 모든 내용은\n" +
         "나의 기록으로 남아 언제든 확인할 수 있습니다",
       images : [
         require("../general/img/mobile-feature-1-1.png"),
-       
+        require("../general/img/mobile-product_test1.png")
       ]
     },
     {
