@@ -8,9 +8,6 @@ const Contact = () => {
     description: " ",
     userContact: " ",
   })
-  // const [title, setTitle] = useState("");
-  // const [description, setDescription] = useState("");
-  // const [userContact, setUserContact] = useState("");
 
   const serviceID = "service_o2fa0rh";
   const templateID = "template_1bsoxza";
@@ -18,20 +15,20 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     //need to send a inquiry mail with title, description, userContact
-    window.alert(`접수되었습니다`);
-    setForm("");
-    // setTitle("");
-    // setDescription("");
-    // setUserContact("");
-
+   
     e.preventDefault();
 
-    emailjs.send("service_o2fa0rh", "template_1bsoxza", form, publicKey)
+    emailjs.send(serviceID, templateID, form, publicKey)
         .then((result) => {
           console.log(result.text, result.status);
+          window.alert(`접수되었습니다`);
+          setForm({title: " ", description: " ", userContact: " "});
       }, (error) => {
           console.log(error.text);
+          window.alert(`에러가 발생하여 다시 시도 해주세요`);
       });
+
+      
 
   }
   return (
