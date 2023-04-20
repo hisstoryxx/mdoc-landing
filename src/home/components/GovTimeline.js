@@ -13,12 +13,13 @@ const timeline = {
     {month: 12, name: "재활"},
   ],
   "2021" : [
-    {month: 10, name: "결핵"}
+    {month: 10, name: "결핵"},
+    {month: 12, name: "암"}
   ],
-  "예정" : [
-    {month: null, name: "결핵"},
-    {month: null, name: "암"}
-  ],
+  // "2022" : [
+  //   // {month: null, name: "결핵"},
+  //   {month: null, name: "암"}
+  // ],
 }
 const GovTimeline = () => {
   const introTitle = "더 많은 분들이 \n편리함을 누리실 수 있도록";
