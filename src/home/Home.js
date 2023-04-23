@@ -152,6 +152,8 @@ const Home = () => {
   
   const cardFlipOnScroll = new CardFlipOnScroll(mainContent1, sticky, cards)
   cardFlipOnScroll.init()
+
+  const phone = document.querySelector('.contentsContainer')
   return (
     <div className="page home">
       <Intro/>
@@ -249,7 +251,7 @@ const Home = () => {
         </div>
         {/* 교육영상 */}
         <div class = "contentsContainer">
-          <div class = "contentsBack" style={{opacity: (scrollPosition - 9400)/1000}}>
+          <div class = "contentsBack" style={{opacity: (scrollPosition - phone?.offsetTop)/1000}}>
         
           </div>
           <div class = "thumnailBack" >
