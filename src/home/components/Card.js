@@ -1,12 +1,9 @@
-import React, {useRef, useState, useEffect} from "react";
-import "./Home.scss";
-import Intro from "./components/Intro";
-import ProductSummary from "./components/ProductSummary";
-import GovTimeline from "./components/GovTimeline";
-import Card from "./components/Card";
-import './Home.css'
-const Home = () => {
+import React, {useRef, useEffect, useState} from "react"
+import mainLogo from "../../general/img/main.png";
+// import severance from "../../general/img/severance.png";
+import "./Card.scss";
 
+const Card = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
 
   const myRef = useRef();
@@ -57,7 +54,7 @@ const Home = () => {
     }
   }, [])
 
-  console.log(scrollPosition)
+  
 
   useEffect(() => {
     const handleWindowResize = () => {
@@ -145,42 +142,41 @@ const Home = () => {
   
   const cardFlipOnScroll = new CardFlipOnScroll(mainContent1, sticky, cards)
   cardFlipOnScroll.init()
+
+
+  
+
+
+
   return (
-    <div className="page home">
-      <Intro/>
-      <ProductSummary/>
-      <>
-        <div class = "maincontent1" ref={myRef}>
-          <div class = "sticky">
-            <div class="sticky-background">
-              MY LIFE GOALs
-            </div>
-            <div class = "card-frame">
-              <div class = "card">
-                <div class = "front">CHICKEN</div>
-                <div class = "back"> </div>
-              </div>
-              <div class = "card">
-                <div class = "front">PINEAPPLE<br/>PIZZA</div>
-                <div class = "back"> </div>
-              </div>
-              <div class = "card">
-                <div class = "front">FISH<br/>&<br/>CHIPS</div>
-                <div class = "back"> </div>
-              </div>
-              <div class = "card">
-                <div class = "front">NOODLES</div>
-                <div class = "back"> </div>
-              </div>
-
-
-            </div>
-          </div>
+    <div class = "maincontent1" ref={myRef}>
+    <div class = "sticky">
+      <div class="sticky-background">
+        MY LIFE GOALs
+      </div>
+      <div class = "card-frame">
+        <div class = "card">
+          <div class = "front">CHICKEN</div>
+          <div class = "back"> </div>
         </div>
-        </>
-      <GovTimeline/>
+        <div class = "card">
+          <div class = "front">PINEAPPLE<br/>PIZZA</div>
+          <div class = "back"> </div>
+        </div>
+        <div class = "card">
+          <div class = "front">FISH<br/>&<br/>CHIPS</div>
+          <div class = "back"> </div>
+        </div>
+        <div class = "card">
+          <div class = "front">NOODLES</div>
+          <div class = "back"> </div>
+        </div>
+
+
+      </div>
+    </div>
     </div>
   )
 }
 
-export default Home;
+export default Card;

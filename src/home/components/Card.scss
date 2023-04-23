@@ -1,17 +1,11 @@
 @import "src/general/colors";
-
-.page.home{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
+@import "src/general/sizes";
 
 .maincontent1 {
   width: 100%;
   height: 500vh;
+  margin: 100vh 0;
   border: 1px solid red;
-  background-color: black;
 }
 
 .sticky {
@@ -22,7 +16,6 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-color: brown;
 }
 
 .sticky-background {
@@ -97,5 +90,4 @@
     width: 35vw;
     height: 50vw;
   }
-}
-*/
+} */
