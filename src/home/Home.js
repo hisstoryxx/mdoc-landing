@@ -164,6 +164,7 @@ const Home = () => {
             <div class="sticky-background">
               {/* MY LIFE GOALs */}
             </div>
+           
             <div class = "card-frame">
               <div class = "card">
                 <div class = "front">
@@ -243,6 +244,7 @@ const Home = () => {
 
 
             </div>
+          
           </div>
         </div>
         {/* 교육영상 */}
