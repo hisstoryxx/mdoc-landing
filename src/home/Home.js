@@ -31,7 +31,7 @@ const Home = () => {
   const getPosition = () => {
     if(myRef.current.offsetHeight){
       const h = myRef.current.offsetHeight;
-      console.log('11',myRef.current.offsetHeight)
+      // console.log('11',myRef.current.offsetHeight)
       setH(h);
 
     }
