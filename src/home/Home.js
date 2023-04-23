@@ -3,8 +3,14 @@ import "./Home.scss";
 import Intro from "./components/Intro";
 import ProductSummary from "./components/ProductSummary";
 import GovTimeline from "./components/GovTimeline";
-
-
+import printImg from "../general/img/print.png";
+import Goal1Img from "../general/img/Goal1.png";
+import Goal2Img from "../general/img/Goal2.png";
+import Goal3Img from "../general/img/Goal3.png";
+import Goal4Img from "../general/img/Goal4.png";
+import callImg from "../general/img/call.png";
+import bookImg from "../general/img/book.png";
+import eduImg from "../general/img/edu.png";
 const Home = () => {
 
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -23,9 +29,13 @@ const Home = () => {
 
   // This function calculate X and Y
   const getPosition = () => {
-    const h = myRef.current.offsetHeight;
-    console.log('11',myRef.current.offsetHeight)
-    setH(h);
+    if(myRef.current.offsetHeight){
+      const h = myRef.current.offsetHeight;
+      console.log('11',myRef.current.offsetHeight)
+      setH(h);
+
+    }
+  
 
     const y = myRef.current.offsetTop;
     setY(y);
@@ -156,24 +166,83 @@ const Home = () => {
         <div class = "maincontent1" ref={myRef}>
           <div class = "sticky">
             <div class="sticky-background">
-              MY LIFE GOALs
+              {/* MY LIFE GOALs */}
             </div>
             <div class = "card-frame">
               <div class = "card">
-                <div class = "front">CHICKEN</div>
-                <div class = "back"> </div>
+                <div class = "front">
+                  <div className="description">
+                  <img className="Img" src={Goal1Img} alt="printImg"/>
+                    <div className="first-line">
+                      <span>반복적인 패턴의 질문을 사전에 환자가 입력하게 하여 <strong>의료진 업무효율을 높이자</strong></span>
+                    </div>
+                  </div>
+                </div>
+                <div class = "back">
+                
+                <div className="description">
+                <img className="Img" src={printImg} alt="printImg"/>
+                  <div className="first-line">
+                    <span><strong>수가 청구</strong>업무량이  <strong>부담</strong>되고,</span>
+                  </div>
+                  <span>  <strong>인력이</strong> 부족해요 </span>
+                </div>
+                 
+                </div>
               </div>
               <div class = "card">
-                <div class = "front">PINEAPPLE<br/>PIZZA</div>
-                <div class = "back"> </div>
+                <div class = "front">
+                  <div className="description">
+                  <img className="Img" src={Goal2Img} alt="printImg"/>
+                    <div className="first-line">
+                      <span>보안이 철저한 의료진 양방향 메신저를 개발해 <strong>환자관리 목적의 앱을 제공하자</strong></span>
+                    </div>
+                  </div>
+                </div>
+                <div class = "back">
+                  <div className="description">
+                  <img className="Img" src={callImg} alt="printImg"/>
+                    <div className="first-line">
+                      <span>의료진 <strong>개인 연락처</strong>로 연락을 하는 환자가 있어요</span>
+                    </div>          
+                  </div>
+                </div>
               </div>
               <div class = "card">
-                <div class = "front">FISH<br/>&<br/>CHIPS</div>
-                <div class = "back"> </div>
+                <div class = "front">
+                 <div className="description">
+                  <img className="Img" src={Goal3Img} alt="printImg"/>
+                    <div className="first-line">
+                      <span>주마다 반복되는 정기상담 일정을 예약해 <strong>상담시간을 사전에 약속하게 하자</strong></span>
+                    </div>
+                  </div>
+                </div>
+                <div class = "back">
+                  <div className="description">
+                  <img className="Img" src={bookImg} alt="printImg"/>
+                    <div className="first-line">
+                      <span>환자분이 <strong>상담일정</strong>을 종종 잊어버리세요</span>
+                    </div>          
+                  </div>
+                </div>
               </div>
               <div class = "card">
-                <div class = "front">NOODLES</div>
-                <div class = "back"> </div>
+                <div class = "front">
+                  <div className="description">
+                  <img className="Img" src={Goal4Img} alt="printImg"/>
+                    <div className="first-line">
+                      <span><strong>표준화된 교육자료를 개발</strong>하고 주기적으로 환자가 학습할 수 있게 하자</span>
+                    </div>
+                  </div>
+                </div>
+                <div class = "back">
+                  <div className="description">
+                  <img className="Img" src={eduImg} alt="printImg"/>
+                    <div className="first-line">
+                      <span>지속적인 <strong>정보제공</strong>이 이루어지지 않아요</span>
+                    </div>          
+                  </div>
+                </div>
               </div>
 
 
