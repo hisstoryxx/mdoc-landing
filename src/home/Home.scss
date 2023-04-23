@@ -153,6 +153,30 @@
   }
 }
 
+.contentsContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  
+
+}
+
+.contentsBack{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items:flex-end;
+  justify-content: center;
+  overflow: hidden;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url( "../general/img/background2.png" );
+}
+
 
 
 @media (max-width: $mobile-breakpoint) {

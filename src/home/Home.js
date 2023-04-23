@@ -94,15 +94,11 @@ const Home = () => {
       this.step = 0
     }
 
-    
-
     init() {
       this.start = y - 100
       this.end = y + h  - windowSize[1] * 1.2
       this.step = (this.end - this.start) / (this.length * 2)
     }
-
-  
 
     animate() {
       this.cards.forEach((card, i) => {
@@ -247,6 +243,12 @@ const Home = () => {
 
 
             </div>
+          </div>
+        </div>
+        {/* 교육영상 */}
+        <div class = "contentsContainer">
+          <div class = "contentsBack">
+
           </div>
         </div>
         
