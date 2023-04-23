@@ -27,15 +27,18 @@ function App() {
   }
   return (
     <>
-    {start == false ? 
-    <div onClick={letsGo} className={"landingContainer"}>
-      <div className={"LandingImg"}>
-      
-      </div>
-    </div>
-   :
+    
+   
+   
     <div className={"app"}>
-      
+      {!start &&
+
+      <div onClick={letsGo} className={"landingContainer"}>
+        <div className={"LandingImg"}>
+        
+        </div>
+      </div>
+      }
       <NavBar/>
 
       <Switch>
@@ -50,7 +53,7 @@ function App() {
       <Footer/>
     
     </div> 
-    }
+    
     </>
   );
 }
