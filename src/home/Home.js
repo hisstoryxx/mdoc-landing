@@ -68,7 +68,7 @@ const Home = () => {
     }
   }, [])
 
- 
+ console.log(scrollPosition)
 
   useEffect(() => {
     const handleWindowResize = () => {
@@ -248,6 +248,14 @@ const Home = () => {
         {/* 교육영상 */}
         <div class = "contentsContainer">
           <div class = "contentsBack">
+            {/* <div class = "thumnailFrame1">
+              
+            </div>
+            <div class = "thumnailFrame2">
+              
+            </div> */}
+          </div>
+          <div class = "thumnailBack" style={{opacity: (scrollPosition - 8800)/1000}}>
 
           </div>
         </div>
