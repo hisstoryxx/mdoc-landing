@@ -6,12 +6,11 @@
   align-items: center;
 }
 
-
 .maincontent1 {
   width: 100%;
   height: 500vh;
   border: 1px solid red;
-  background-color: black;
+  background-color: blue;
 }
 
 .sticky {
@@ -41,6 +40,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 
 .card{
@@ -53,6 +53,7 @@
   transform-style: preserve-3d;
   position: relative;
   transform: perspective(4000px) translate(100vw) rotate(180deg);
+
 }
 
 .front, .back{

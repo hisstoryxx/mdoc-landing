@@ -3,8 +3,8 @@ import "./Home.scss";
 import Intro from "./components/Intro";
 import ProductSummary from "./components/ProductSummary";
 import GovTimeline from "./components/GovTimeline";
-import Card from "./components/Card";
-import './Home.css'
+
+
 const Home = () => {
 
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -24,6 +24,7 @@ const Home = () => {
   // This function calculate X and Y
   const getPosition = () => {
     const h = myRef.current.offsetHeight;
+    console.log('11',myRef.current.offsetHeight)
     setH(h);
 
     const y = myRef.current.offsetTop;
@@ -57,7 +58,7 @@ const Home = () => {
     }
   }, [])
 
-  console.log(scrollPosition)
+ 
 
   useEffect(() => {
     const handleWindowResize = () => {
@@ -87,7 +88,7 @@ const Home = () => {
 
     init() {
       this.start = y - 100
-      this.end = y + h - windowSize[1] * 1.2
+      this.end = y + h  - windowSize[1] * 1.2
       this.step = (this.end - this.start) / (this.length * 2)
     }
 
@@ -148,8 +149,10 @@ const Home = () => {
   return (
     <div className="page home">
       <Intro/>
-      <ProductSummary/>
-      <>
+     
+      
+        <ProductSummary/>
+       
         <div class = "maincontent1" ref={myRef}>
           <div class = "sticky">
             <div class="sticky-background">
@@ -177,7 +180,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        </>
+        
       <GovTimeline/>
     </div>
   )
