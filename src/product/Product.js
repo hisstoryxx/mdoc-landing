@@ -13,7 +13,7 @@ const productDetail = {
         "혈압, 혈당, 복막투석으로 나누어진 카테고리를 제공하며\n" +
         "기록된 데이터는 건강기록 분석탭에서 확인 가능합니다",
       images : [
-        require("../general/img/mobile-product_test1.png")
+        require("../general/img/건강기록2.png")
       ]
     },
     {
@@ -25,8 +25,7 @@ const productDetail = {
         "또한, 정기상담으로 주고받은 모든 내용은\n" +
         "나의 기록으로 남아 언제든 확인할 수 있습니다",
       images : [
-        require("../general/img/mobile-feature-1-1.png"),
-        require("../general/img/mobile-product_test1.png")
+        require("../general/img/정기상담2.png"),
       ]
     },
     {
@@ -34,7 +33,7 @@ const productDetail = {
       description: "한눈에 보기 쉬운 그래프 형태의 분석 데이터를 확인할 수 있고\n" +
         "변화과정 보기를 통해 기간 별 건강 추이가 가능합니다.",
       images : [
-        require("../general/img/mobile-feature-2-1.png"),
+        require("../general/img/건강데이터분석2.png"),
         
       ]
     },
@@ -56,7 +55,7 @@ const productDetail = {
         "나의 질병을 더욱 잘 이해하고\n" +
         "관리할 수 있도록 준비하고 있습니다",
       images : [
-        require("../general/img/mobile-feature-preparing.png"),
+        require("../general/img/교육자료2.png"),
       ]
     }
   ],
