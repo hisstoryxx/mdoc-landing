@@ -11,6 +11,7 @@ import Goal4Img from "../general/img/Goal4.png";
 import callImg from "../general/img/call.png";
 import bookImg from "../general/img/book.png";
 import eduImg from "../general/img/edu.png";
+
 const Home = () => {
 
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -68,7 +69,7 @@ const Home = () => {
     }
   }, [])
 
- console.log(scrollPosition)
+ //console.log(scrollPosition)
 
   useEffect(() => {
     const handleWindowResize = () => {
