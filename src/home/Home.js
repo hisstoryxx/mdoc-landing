@@ -161,13 +161,22 @@ const Home = () => {
      
       
         <ProductSummary/>
+
+        
        
         <div class = "maincontent1" ref={myRef}>
+          <div class = "stickyContainer">
           <div class = "sticky">
-            <div class="sticky-background">
-              {/* MY LIFE GOALs */}
+            <div class = "container">
+              
             </div>
-           
+            <div class = "container1">
+              22
+            </div>
+            {/* <div class="sticky-background">
+              
+            </div>
+            */}
             <div class = "card-frame">
               <div class = "card">
                 <div class = "front">
@@ -249,6 +258,9 @@ const Home = () => {
             </div>
           
           </div>
+
+          </div>
+          
         </div>
         {/* 교육영상 */}
         <div class = "contentsContainer">
