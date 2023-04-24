@@ -168,7 +168,21 @@ const Home = () => {
           <div class = "stickyContainer">
           <div class = "sticky">
             <div class = "container">
-              
+              <div class= "backTitle">
+                  <div class = "innerContainer">
+                    <div class = "titleText">
+                        <span>Background</span>
+                    </div>
+                    <div class = "contentText">
+                      <span> <strong> 환자와 의료인</strong> 모두가 고통 받는</span>
+                      <span><blu>비효율적인 재택 의료 체계</blu></span>
+                      <span>어떻게 하면 개선이 가능할까요?</span>
+                    </div>
+                  </div>
+              </div>
+              <div class = "backContents">
+
+              </div>
             </div>
             <div class = "container1">
               22
