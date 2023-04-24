@@ -49,19 +49,14 @@
           pointer-events: none;
         }
 
-        &:hover{
-          &:before{
-            display: block;
-            opacity: 0.2;
-          }
-        }
+       
 
         &:before{
           position: absolute;
-          bottom: -8px;
+          bottom: -5px;
           left: 0px;
           width: 100%;
-          height: 4px;
+          height: 3px;
           content: "";
           background-color: $mdoc-ui-blue;
           display: none;
@@ -73,6 +68,25 @@
     }
   }
 }
+
+.nav-bar .boundary .menu-container .menu::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background:  $mdoc-ui-blue;
+  transition: width 0.4s;
+}
+
+.nav-bar .boundary .menu-container .menu:hover::after{
+  
+  width: 100%;
+  
+}
+
 
 @media (max-width: $tablet-breakpoint) {
   .nav-bar{

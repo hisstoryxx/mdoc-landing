@@ -31,14 +31,14 @@ function App() {
    
    
     <div className={"app"}>
-      {!start &&
+      {/* {!start &&
 
       <div onClick={letsGo} className={"landingContainer"}>
         <div className={"LandingImg"}>
         
         </div>
       </div>
-      }
+      } */}
       <NavBar/>
 
       <Switch>

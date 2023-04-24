@@ -14,7 +14,11 @@ const timeline = {
   ],
   "2021" : [
     {month: 10, name: "결핵"},
-    {month: 12, name: "암"}
+    {month: 12, name: "암(장루)"}
+  ],
+  "2022" : [
+    {month: 12, name: "암(요루)"},
+    
   ],
   // "2022" : [
   //   // {month: null, name: "결핵"},
