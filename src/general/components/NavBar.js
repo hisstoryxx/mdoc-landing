@@ -91,7 +91,8 @@ const NavBar = () => {
             </div>
           </div>
           <div className="divider"/>
-          <Link ref={contactRef} className="menu contact" to={"/contact"}>문의</Link>
+          {/* <Link ref={contactRef} className="menu contact" to={"/contact"}>문의</Link> */}
+          <Link ref={contactRef} className="menu contact" to={"/contact"}>고객센터</Link>
         </div>
       </div>
     </div>
