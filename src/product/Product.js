@@ -61,10 +61,11 @@ const productDetail = {
   ],
   "desktop" : [
     {
-      title: "효율적이고 편리한 메세지 상담",
+      title: "효율적인 환자상담",
       description:
-        "환자별 상담을 한 눈에 확인할 수 있어 즉각적인 응대가 가능하며,\n" +
-        "반복적으로 전달해야하는 정보를 자주 사용하는 문구로 등록하여\n" +
+        "환자별 상담내역을 한 눈에 확인할 수 있고,\n" +
+        "작성된 사전문진표를 정기상담 전에 받아볼 수  있습니다.\n" +
+        "반복적인 정보는 자주 사용하는 문구로 등록하여\n" +
         "더욱 효율적인 상담이 가능합니다",
       images : [
         require("../general/img/desktop-feature-1.png"),
@@ -73,14 +74,14 @@ const productDetail = {
     {
       title: "정기상담 일정관리",
       description:
-        "의료진의 일정에 맞추어 상담가능한 일자를\n" +
-        "예약가능 슬롯으로 쉽게 관리할 수 있습니다",
+        "환자가 정기상담 일정을 예약하기 전 의료진 상담가능 일자를 확인하고,\n" +
+        "예약가능 슬롯으로 쉽게 관리할 수 있습니다.",
       images : [
         require("../general/img/desktop-feature-2.png"),
       ]
     },
     {
-      title: "나의 환자 관리",
+      title: "나의 환자 정보관리",
       description:
         "나의 환자 목록을 관리할 수 있고,\n" +
         "환자 목록 Excel 파일을 불러올 수 있습니다",
