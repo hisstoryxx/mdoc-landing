@@ -3,6 +3,11 @@ import mainLogo from "../../general/img/main.png";
 // import severance from "../../general/img/severance.png";
 import "./Intro.scss";
 import gsap from 'gsap';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faYoutube } from "@fortawesome/free-brands-svg-icons";
+import Kakao from "../../general/img/iconkakao.png";
 const Intro = () => {
   const imgRef = useRef(null);
   const titleRef = useRef(null);
@@ -81,6 +86,19 @@ const Intro = () => {
         </div>
         {/*<img src={severance} alt=""/>*/}
       </div>
+
+      <div class = "medias">
+                <ul>
+                  <li> 
+                    <a href="https://www.instagram.com/official.mdoc/">
+                    <img className="kakaoIcon" src={Kakao} alt="kakao icon" /></a></li>
+                  <li><a href="https://www.instagram.com/official.mdoc/">
+                      <FontAwesomeIcon icon={faInstagram} size="2x" /></a></li>
+                  <li><a href="https://www.youtube.com/@mdoc9900">
+                      <FontAwesomeIcon icon={faYoutube} size="2x" /></a></li>
+                </ul>
+
+            </div>
     </div>
   )
 }

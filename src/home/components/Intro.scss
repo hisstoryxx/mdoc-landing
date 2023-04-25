@@ -90,6 +90,31 @@
   }
 }
 
+.medias ul{
+  list-style: none;
+  position: fixed;
+  right:20px;
+  top: 70%;
+  
+  padding: 10px 30px;
+}
+
+.medias ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  margin: 24px 0;
+  transition: .3s;
+
+}
+
+
+
+.medias ul li:hover{
+  transform: scale(1.9);
+}
+
 @media (max-width: $tablet-breakpoint){
   .intro{
     .partner{
