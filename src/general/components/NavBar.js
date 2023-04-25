@@ -92,7 +92,7 @@ const NavBar = () => {
           </div>
           {/* <div className="divider"/> */}
           {/* <Link ref={contactRef} className="menu contact" to={"/contact"}>문의</Link> */}
-          <Link ref={contactRef} className="menu contact" to={"/contact"}>고객센터</Link>
+          <Link ref={contactRef} className="menu contact" to={"/contact"}>문의하기</Link>
           {/* <div className="divider"/> */}
           
           {/* <Link ref={contactRef} className="menu contact" to={"/contact"}>
