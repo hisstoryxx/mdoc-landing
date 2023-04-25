@@ -67,9 +67,10 @@ const Footer = () => {
           </div>
         </div>
         <div className="section-menu">
-          
+          <div className ="section-row">
           {menuGroups.map( (menuGroup, index) => {
             return (
+    
               <div className="menu-group" key={index}>
                 <div className="title">
                   {menuGroup.title}
@@ -82,10 +83,10 @@ const Footer = () => {
               </div>
             )
           })}
+          </div>
+
           <div className="iconContainer">
 
-            
-            
             <div class = "media">
                 <ul>
                   <li> 
