@@ -18,7 +18,9 @@
   .boundary{
     display: flex;
     //max-width: 800px;
+    //background-color: royalblue;
     .section-company-info{
+      background-color: salmon;
       flex: 1;
       display: flex;
       flex-direction: column;
@@ -42,8 +44,14 @@
 
     }
     .section-menu{
+      background-color: red;
       display: flex;
       gap: 24px;
+      flex-direction: column;
+      // mobile
+      // justify-content: center;
+      // align-items: center;
+      flex:1;
       .menu-group{
         flex: 1;
         width: 200px;
@@ -59,9 +67,51 @@
           line-height: 28px;
         }
       }
+
+      .iconContainer{
+        display: flex;
+        flex-direction: row;
+        background-color: seagreen;
+          // .icons a{
+          //   display: flex;
+          //   color: white;
+          //   font-size: 100px;
+          //   background-color: yellow;
+          //}
+      }
     }
   }
 }
+
+
+.media ul{
+  display: flex;
+  list-style: none;
+  position: relative;
+  flex-direction: row;
+  right:20px;
+  padding: 10px 30px;
+}
+
+.media ul li{
+  
+  margin: 10px 24px;
+  transition: .3s;
+  
+}
+
+.media ul li icon{
+  background-color: yellow;
+}
+
+.media ul li:hover{
+  transform: scale(1.9);
+}
+
+.kakaoIcon{
+  width: 25px;
+}
+
 
 @media (max-width: $tablet-breakpoint) {
   .footer{

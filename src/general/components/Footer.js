@@ -2,6 +2,11 @@ import React from "react";
 import {Link, useLocation} from "react-router-dom";
 import "./Footer.scss";
 import mDocLogoType from "../img/logo-type.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faYoutube } from "@fortawesome/free-brands-svg-icons";
+import Kakao from "../img/iconkakao.png";
+
 
 const menuGroups = [
   {
@@ -58,9 +63,11 @@ const Footer = () => {
            <Link to={"/check/data"}>개인정보 처리방침</Link>
            <Link to={"/check/agree"}>개인정보 수집 및 이용 동의</Link>
            <Link to={"/check/user"}>이용약관</Link>
+           
           </div>
         </div>
         <div className="section-menu">
+          
           {menuGroups.map( (menuGroup, index) => {
             return (
               <div className="menu-group" key={index}>
@@ -75,6 +82,26 @@ const Footer = () => {
               </div>
             )
           })}
+          <div className="iconContainer">
+
+            
+            
+            <div class = "media">
+                <ul>
+                  <li> 
+                    <a href="https://www.instagram.com/official.mdoc/">
+                    <img className="kakaoIcon" src={Kakao} alt="kakao icon" /></a></li>
+                  <li><a href="https://www.instagram.com/official.mdoc/">
+                      <FontAwesomeIcon icon={faInstagram} size="2x" /></a></li>
+                  <li><a href="https://www.youtube.com/@mdoc9900">
+                      <FontAwesomeIcon icon={faYoutube} size="2x" /></a></li>
+                </ul>
+
+            </div>
+
+          
+          </div>
+          
         </div>
       </div>
     </div>

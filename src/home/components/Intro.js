@@ -74,7 +74,7 @@ const Intro = () => {
         {/*</div>*/}
         <div ref ={textsRef} className="description">
           <div className="first-line">
-            <span>엠닥홈케어는 <strong>연세대학교 의과대학 연구진</strong>과&nbsp;</span>
+            <span>엠닥홈케어는 연세대학교 의과대학 연구진과&nbsp;</span>
             <span>공동으로 개발한 재택의료 통합 플랫폼으로,</span>
           </div>
           <span>임상적 근거 확보를 위한 연구를 수행 중에 있습니다</span>
