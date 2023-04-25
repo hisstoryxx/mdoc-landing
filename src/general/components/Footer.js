@@ -8,7 +8,8 @@ const menuGroups = [
     title: "제품 소개",
     menus: [
       {
-        name: "환자•보호자용 모바일 앱",
+        // name: "환자•보호자용 모바일 앱",
+        name: "환자용 모바일 앱",
         linkUrl: "/product/mobile",
       },
       {
@@ -21,7 +22,8 @@ const menuGroups = [
     title: "문의",
     menus: [
       {
-        name: "문의하기",
+        // name: "문의하기",
+        name: "고객센터",
         linkUrl: "/contact",
       }
     ]
