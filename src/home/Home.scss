@@ -1,6 +1,6 @@
 @import "src/general/colors";
 @import "src/general/sizes";
-.page.home{
+.page.home {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,12 +12,11 @@
   // max-width: 1200px;
 
   height: 500vh;
-  
+
   // border: 1px solid red;
-  
 }
 
-.stickyContainer{
+.stickyContainer {
   position: sticky;
   top: 0;
   flex-direction: column;
@@ -29,17 +28,16 @@
   align-items: center;
   // padding: 0px 24px;
   // width: 100%;
- 
 }
 .sticky {
   position: sticky;
   top: 0;
-  
+
   flex-direction: column;
   height: 80vh;
-  
+
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   overflow: hidden;
   background-size: cover;
@@ -49,97 +47,81 @@
   //background-color: aqua;
 }
 
-.innerContainer{
+.innerContainer {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 80%;
   padding: 20px 20px;
- 
+
   //background-color: magenta;
 
-  .titleText{
+  .titleText {
     display: flex;
-    flex:1;
+    flex: 1;
     width: 100%;
     // background-color: #FFF;
     align-items: center;
     font-weight: 700;
-    
 
     span {
       font-size: 22px;
       text-align: left;
-      color: #DCDCDC;
+      color: #dcdcdc;
       line-height: 1.6;
       text-transform: uppercase;
       letter-spacing: 1px;
-      
-  
+
       strong {
         font-size: 16px;
         color: $mdoc-brand-blue;
         background-color: $mdoc-ui-blue;
-        
       }
     }
-  
-
   }
-  .contentText{
+  .contentText {
     display: flex;
     flex-direction: column;
     width: 100%;
-    flex:3;
+    flex: 3;
     overflow: hidden;
     flex-wrap: wrap;
     //background-color: mediumorchid;
 
     span {
-      display:inline-block;
+      display: inline-block;
       font-size: 30px;
       text-align: left;
       color: #000000;
       line-height: 1.3;
       text-transform: uppercase;
       letter-spacing: 2px;
-      
-  
+
       strong {
-       
         font-size: 35px;
-        color: #000; 
-       
-        background-image: linear-gradient(#fff 50%, rgba(50, 80, 210, 0.2) 50% );
-        
+        color: #000;
+
+        background-image: linear-gradient(#fff 50%, rgba(50, 80, 210, 0.2) 50%);
       }
-      
-      blu{
+
+      blu {
         font-size: 35px;
         font-weight: 700;
         color: $mdoc-brand-blue;
       }
-
-      
     }
-
-    
-
   }
-
-  
 }
 
-.container{
-  
+.container {
   position: sticky;
   display: flex;
   width: 100vw;
   height: 80%;
-  
+
   // opacity: 0.7;
 
-  .backTitle{
+  .backTitle {
     display: flex;
     width: 100%;
     height: 100%;
@@ -148,9 +130,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url( "../general/img/backRight1.png" );
+    background-image: url("../general/img/backRight1.png");
   }
-  .backContents{
+  .backContents {
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -162,45 +144,37 @@
     // background-position: center;
     // background-image: url( "../general/img/backRight1.png" );
     // background-color: rgb(52, 3, 55);
-    .exContainer{
+    .exContainer {
       display: flex;
       height: 90%;
       flex-direction: column;
       justify-content: center;
       //background-color: aqua;
-  
-      
+
       span {
-        
         font-size: 16px;
         text-align: left;
         color: #000000;
         line-height: 1.8;
         letter-spacing: 1px;
       }
-
     }
-    
-
   }
-  
 }
 
-
-.container1{
-  
+.container1 {
   position: sticky;
   display: flex;
   width: 100vw;
-  height:100vh;
-  background-color: #e8edf6 ;
+  height: 100vh;
+  background-color: #e8edf6;
   // opacity: 0.7;
-  
-  bottom:0;
+
+  bottom: 0;
 
   flex-direction: row;
-  
-  .doctorContainer{
+
+  .doctorContainer {
     display: flex;
     z-index: 100;
     width: 100%;
@@ -208,25 +182,21 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url( "../general/img/background-doctor.png" );
+    background-image: url("../general/img/background-doctor.png");
     // background-color: red;
   }
 
-  .patientContainer{
+  .patientContainer {
     display: flex;
     width: 100%;
     height: 130%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url( "../general/img/background-patient.png" );
+    background-image: url("../general/img/background-patient.png");
     // background-color: blue;
   }
-
-
 }
-
-
 
 .sticky-background {
   width: 100%;
@@ -239,8 +209,8 @@
   // background-color: aqua;
 }
 
-.card-frame{
-  position:absolute;
+.card-frame {
+  position: absolute;
   width: 95vw;
   max-width: $page-max-width;
   height: 30vh;
@@ -248,12 +218,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 
-
-
-.card{
+.card {
   width: 24%;
   height: 100%;
   display: flex;
@@ -263,12 +230,10 @@
   transform-style: preserve-3d;
   position: relative;
   transform: perspective(4000px) translate(100vw) rotate(180deg);
-
 }
 
-
-
-.front, .back{
+.front,
+.back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -277,24 +242,23 @@
   backface-visibility: hidden;
 }
 
-.front{
+.front {
   background-color: #fff;
   font-size: 0.5em;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  border:2px solid #e6edfa;
-  .Img{
+  border: 2px solid #e6edfa;
+  .Img {
     display: flex;
     padding: 20px;
     margin-left: 15px;
     width: calc(100% - 60px);
   }
-  
 }
 
-.back{
+.back {
   transform: rotateY(180deg);
   background-color: #e6edfa;
   display: flex;
@@ -303,23 +267,22 @@
   text-align: center;
   // background-image: repeating-linear-gradient(0deg, #3B3A38, #3B3A38 33.3%, #FFFFFF00 0px, #FFFFFF00 67%) ;
   background-size: 100%;
-  
 }
 
-.Img{
+.Img {
   display: flex;
   padding: 10px;
   width: calc(100% - 60px);
 }
 
-.description{
+.description {
   padding: 0px 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  .first-line{
+  .first-line {
     display: flex;
   }
 
@@ -334,20 +297,13 @@
       color: $mdoc-brand-blue;
     }
   }
-
 }
 
-
-
-
-
-
-@media screen and (orientation:portrait) {
+@media screen and (orientation: portrait) {
   .sticky {
-
     // position: sticky;
     // top: 0;
-    
+
     // height: 100vh;
     // display: flex;
     // align-items:flex-end;
@@ -367,138 +323,228 @@
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
     gap: 4vw;
-    
+
     justify-items: center;
   }
 
   .card {
-    
     width: 35vw;
     height: 45vw;
   }
 
-  .front{
+  .front {
     background-color: #fff;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    border:1px solid #e6edfa;
-    .Img{
+    border: 1px solid #e6edfa;
+    .Img {
       display: flex;
       padding: 0px;
       margin-left: 5px;
       width: calc(100% - 60px);
     }
-    
   }
 
-  .Img{
+  .Img {
     display: flex;
     padding: 0;
     width: calc(100% - 60px);
   }
-  
 
-.description{
-  padding: 0px 8px;
- 
-  .first-line{
-    display: flex;
-  }
+  .description {
+    padding: 0px 8px;
 
-  span {
-    font-size: 12px;
-    text-align: center;
-    color: rgb(38, 24, 24);
-    line-height: 1;
+    .first-line {
+      display: flex;
+    }
 
-    strong {
+    span {
       font-size: 12px;
-      color: $mdoc-brand-blue;
+      text-align: center;
+      color: rgb(38, 24, 24);
+      line-height: 1;
+
+      strong {
+        font-size: 12px;
+        color: $mdoc-brand-blue;
+      }
     }
   }
-
-}
 }
 
-.contentsContainer{
+.contentsContainer {
   // display: flex;
   // flex-direction: column;
   // align-items: center;
-  // justify-content: center;
+  justify-content: center;
+ 
   width: 100%;
   height: 400vh;
   
-
 }
 
-.contentsBack{
+
+
+.contentsBack {
   position: sticky;
   top: 0;
+  width: 100%;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items:center;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url( "../general/img/background2.png" );
+  background-color: red;
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-image: url("../general/img/background2.png");
 }
 
-.contentsBack1{
+
+.educontainer {
+  // opacity: 0.7;
+  position: sticky;
+  top: 0;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  //background-color: blue;
+  justify-content: center;
+  align-items: stretch;
+  background-color: royalblue;
+  // padding: 0px 24px;
+  // width: 100%;
+
+  .backTitle {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 80vh;
+    //background-color: yellowgreen;
+    align-items: center;
+    background-color: red;
+
+    .innerContainer {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 80%;
+      padding: 20px 20px;
+      //background-color: red;
+
+      //background-color: magenta;
+
+      .titleText {
+        display: flex;
+        flex: 2;
+        width: 100%;
+        // background-color: #FFF;
+        align-items: center;
+        font-weight: 700;
+
+        span {
+          font-size: 20px;
+          text-align: left;
+          color: #dcdcdc;
+          line-height: 1.6;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+
+          strong {
+            font-size: 16px;
+            color: $mdoc-brand-blue;
+            background-color: $mdoc-ui-blue;
+          }
+        }
+      }
+      .eduText {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex: 3;
+        overflow: hidden;
+        flex-wrap: wrap;
+        //background-color: mediumorchid;
+
+        span {
+          display: inline-block;
+          font-size: 30px;
+          text-align: left;
+          color: #000000;
+          line-height: 1.3;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+
+          strong {
+            font-size: 35px;
+            color: #000;
+
+            background-image: linear-gradient(
+              #fff 50%,
+              rgba(50, 80, 210, 0.2) 50%
+            );
+          }
+
+          blu {
+            font-size: 35px;
+            font-weight: 700;
+            color: $mdoc-brand-blue;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.contentsBack1 {
   position: absolute;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   justify-content: flex-end;
   overflow: hidden;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url( "../general/img/backThumnail.png" );
+  background-image: url("../general/img/backThumnail.png");
   z-index: 100;
 }
 
-.thumnailBack{
+.thumnailBack {
   position: sticky;
   top: 0;
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   justify-content: flex-end;
   overflow: hidden;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url( "../general/img/phone.png" );
+  background-image: url("../general/img/phone.png");
 }
 
-
-.thumnailFrame1{
-    
-    position:relative;
-    width: 100%;
-    height: 20%;
-    bottom: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: green;
-    
-  
-  
+.thumnailFrame1 {
+  position: relative;
+  width: 100%;
+  height: 20%;
+  bottom: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: green;
 }
 
-.thumnailFrame2{
-    
-  position:relative;
+.thumnailFrame2 {
+  position: relative;
   width: 100%;
   height: 20%;
   bottom: 10%;
@@ -506,159 +552,129 @@
   align-items: center;
   justify-content: space-between;
   background-color: blue;
-  
-
-
 }
-
 
 @media (max-width: $mobile-breakpoint) {
-
-
-.innerContainer{
-  display: flex;
-  
-  width: 100%;
-  height: 80%;
-  padding: 10px 10px;
- 
-  //background-color: magenta;
-
-  .titleText{
+  .innerContainer {
     display: flex;
-    flex:1;
+
     width: 100%;
-    // background-color: #FFF;
-    align-items: center;
-    font-weight: 700;
-    
+    height: 80%;
+    padding: 10px 10px;
 
-    span {
-      font-size: 18px;
-      text-align: left;
-      color: #DCDCDC;
-      line-height: 1.6;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      
-  
-      strong {
-        font-size: 16px;
-        color: $mdoc-brand-blue;
-        background-color: $mdoc-ui-blue;
-        
-      }
-    }
-  
+    //background-color: magenta;
 
-  }
-  .contentText{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    flex:3;
-    overflow: hidden;
-    flex-wrap: wrap;
-    //background-color: mediumorchid;
+    .titleText {
+      display: flex;
+      flex: 1;
+      width: 100%;
+      // background-color: #FFF;
+      align-items: center;
+      font-weight: 700;
 
-    span {
-      display:inline-block;
-      font-size: 20px;
-      text-align: left;
-      color: #000000;
-      line-height: 1.3;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      
-  
-      strong {
-       
-        font-size: 25px;
-        color: #000; 
-       
-        background-image: linear-gradient(#fff 50%, rgba(50, 80, 210, 0.2) 50% );
-        
-      }
-      
-      blu{
-        font-size: 35px;
-        font-weight: 700;
-        color: $mdoc-brand-blue;
-      }
+      span {
+        font-size: 18px;
+        text-align: left;
+        color: #dcdcdc;
+        line-height: 1.6;
+        text-transform: uppercase;
+        letter-spacing: 1px;
 
-      
-    }
-
-    
-
-  }
-
-  
-  }
-
-
-.container1{
-  
-  position: sticky;
-  display: flex;
-  width: 100vw;
-  height:100vh;
-  background-color: #e8edf6 ;
-  // opacity: 0.7;
-  
-  bottom:0;
-
-  flex-direction: column;
-  
-  .doctorContainer{
-    display: flex;
-    z-index: 100;
-    width: 100%;
-    height: 200%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url( "../general/img/background-m-doctor.png" );
-    // background-color: red;
-  }
-
-  .patientContainer{
-    display: flex;
-    width: 100%;
-    height: 200%;
-    
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url( "../general/img/background-m-patient.png" );
-    // background-color: blue;
-  }
-
-
-}
-
-
-  .sticky {
-    
-  }
-  
-  
-      .description{
-        *{
-          font-size: 14px !important;
+        strong {
+          font-size: 16px;
+          color: $mdoc-brand-blue;
+          background-color: $mdoc-ui-blue;
         }
       }
-    
+    }
+    .contentText {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      flex: 3;
+      overflow: hidden;
+      flex-wrap: wrap;
+      //background-color: mediumorchid;
+
+      span {
+        display: inline-block;
+        font-size: 20px;
+        text-align: left;
+        color: #000000;
+        line-height: 1.3;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+        strong {
+          font-size: 25px;
+          color: #000;
+
+          background-image: linear-gradient(
+            #fff 50%,
+            rgba(50, 80, 210, 0.2) 50%
+          );
+        }
+
+        blu {
+          font-size: 35px;
+          font-weight: 700;
+          color: $mdoc-brand-blue;
+        }
+      }
+    }
+  }
+
+  .container1 {
+    position: sticky;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #e8edf6;
+    // opacity: 0.7;
+
+    bottom: 0;
+
+    flex-direction: column;
+
+    .doctorContainer {
+      display: flex;
+      z-index: 100;
+      width: 100%;
+      height: 200%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("../general/img/background-m-doctor.png");
+      // background-color: red;
+    }
+
+    .patientContainer {
+      display: flex;
+      width: 100%;
+      height: 200%;
+
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("../general/img/background-m-patient.png");
+      // background-color: blue;
+    }
+  }
+
+  .sticky {
+  }
+
+  .description {
+    * {
+      font-size: 14px !important;
+    }
+  }
 }
 
-
-.background-summary{
+.background-summary {
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   background-color: $l-5;
-  
-  
-
 }

@@ -292,12 +292,39 @@ const Home = () => {
         </div>
         {/* 교육영상 */}
         <div class = "contentsContainer">
+          
           <div class = "contentsBack" style={{opacity: (scrollPosition - phone?.offsetTop)/1000}}>
-        
+          <div class = "educontainer">
+              <div class= "backTitle">
+                  <div class = "innerContainer">
+                    <div class = "titleText">
+                        <span>교육자료</span>
+                    </div>
+                    <div class = "eduText">
+                      <span>환자들이 집에서도 스스로 관리할 수 있도록</span>
+                      <span> 양질의 다양한 교육영상 콘텐츠를 제공합니다</span>
+                      {/* <span><strong> 환자와 의료진</strong>이 겪고 있는 불편함을</span>
+                      <span>어떻게 <blu>개선</blu>할 수 있을까요?</span> */}
+                    </div>
+                    
+                  </div>
+              </div>
+              {/* <div class = "backContents">
+                <div class = "exContainer">
+                <span>현 시점, 팬데믹의 영향으로 다양한 분야에서 비대면 서비스를 제공하고 있습니다.</span>
+                <span>의료분야도 예외는 아닌데요, 기존 내원이 곤란했던 환자를 포함한 다양한 환자들을 대상으로</span>
+                <span>비대면 재택의료 시범사업을 확장하고 있습니다. 하지만 아직 첫 걸음 단계인 만큼</span>
+                <span>이런저런 문제가 많이 발생하고 있는데요, 가장 큰 문제로는 의료진과 환자를 비대면으로</span>
+                <span>이어줄 수 있는 인프라가 제대로 구축이 되어있지 않다는 점입니다. 이로 인해 의료진과 환자 사이의</span>
+                <span>원활한 진료가 이루어지지 못해 양측의 고충이 심화되고 있는 상황입니다.</span>
+                </div>
+              </div> */}
+            </div>
           </div>
           <div class = "thumnailBack" >
 
           </div>
+          
         </div>
         
       <GovTimeline/>
