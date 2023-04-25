@@ -72,7 +72,7 @@ const NavBar = () => {
     })
 
    
-},[]);
+},[location]);
   
   return (
     <div className={"nav-bar"}>
