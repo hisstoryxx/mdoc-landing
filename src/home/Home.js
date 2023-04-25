@@ -301,14 +301,16 @@ const Home = () => {
                         <span>교육자료</span>
                     </div>
                     <div class = "eduText">
-                      <span>환자들이 집에서도 스스로 관리할 수 있도록</span>
-                      <span> 양질의 다양한 교육영상 콘텐츠를 제공합니다</span>
+                      <span><strong>환자들이</strong> 집에서도</span>
+                      <span><blu>스스로 관리</blu>할 수 있도록</span>
+                      <span>양질의 다양한 교육영상 콘텐츠를 제공합니다</span>
                       {/* <span><strong> 환자와 의료진</strong>이 겪고 있는 불편함을</span>
                       <span>어떻게 <blu>개선</blu>할 수 있을까요?</span> */}
                     </div>
                     
                   </div>
               </div>
+              
               {/* <div class = "backContents">
                 <div class = "exContainer">
                 <span>현 시점, 팬데믹의 영향으로 다양한 분야에서 비대면 서비스를 제공하고 있습니다.</span>
