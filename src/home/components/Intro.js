@@ -8,17 +8,30 @@ const Intro = () => {
   const titleRef = useRef(null);
   const textsRef = useRef(null);
   useEffect(() =>{
+    // gsap.fromTo(imgRef.current, {
+    //   opacity: 0,
+    //   y: -800
+    // }, {
+    //   opacity: 1,
+    //   y: 0,
+    //   ease: "elastic.inOut",
+    //   duration: 1.8,
+    //   delay: 1,
+  
+    // })
     gsap.fromTo(imgRef.current, {
       opacity: 0,
-      y: -800
+      x: -20,
     }, {
       opacity: 1,
-      y: 0,
-      ease: "elastic.inOut",
+      x: 0,
+      ease: "expo.inOut",
       duration: 1.8,
       delay: 1,
   
     })
+
+    
 
     gsap.fromTo(titleRef.current, {
       opacity: 0,
