@@ -193,7 +193,13 @@ const Home = () => {
               </div> */}
             </div>
             <div class = "container1">
-              22
+              <div class ="doctorContainer">
+
+              </div>
+              <div class ="patientContainer">
+
+              </div>
+            
             </div>
             {/* <div class="sticky-background">
               

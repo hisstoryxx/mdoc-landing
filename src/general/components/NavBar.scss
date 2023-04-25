@@ -44,6 +44,20 @@
         padding: 0px 12px;
         color: $main-content;
 
+        .down{
+          width: 100%;
+          height: 100%;
+          padding: 10px 5px;
+          border-radius: 10px;
+          border-color: $mdoc-ui-blue;
+          border-width: 2px;
+          border-style: solid;
+          color: $mdoc-ui-blue;
+          
+          // background-color: $mdoc-brand-blue;
+
+        }
+
         &.label{
           color: $sub-content;
           pointer-events: none;
@@ -62,6 +76,7 @@
           display: none;
         }
       }
+      
       .product-menus{
         display: flex;
       }
