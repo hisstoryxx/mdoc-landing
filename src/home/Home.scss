@@ -157,10 +157,10 @@
     width: 100%;
     height: 100%;
     justify-content: flex-end;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url( "../general/img/backRight1.png" );
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-image: url( "../general/img/backRight1.png" );
     // background-color: rgb(52, 3, 55);
     .exContainer{
       display: flex;
@@ -193,14 +193,35 @@
   display: flex;
   width: 100vw;
   height:100vh;
-  background-color: yellow;
-  opacity: 0.7;
+  // background-color: yellow;
+  // opacity: 0.7;
   
   bottom:0;
+
+  flex-direction: row;
   
   .doctorContainer{
-    
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url( "../general/img/background-doctor.png" );
+    // background-color: red;
   }
+
+  .patientContainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url( "../general/img/background-patient.png" );
+    // background-color: blue;
+  }
+
 
 }
 
@@ -323,18 +344,18 @@
 @media screen and (orientation:portrait) {
   .sticky {
 
-    position: sticky;
-    top: 0;
+    // position: sticky;
+    // top: 0;
     
-    height: 100vh;
-    display: flex;
-    align-items:flex-end;
-    justify-content: center;
-    overflow: hidden;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url( "../general/img/background.png" );
+    // height: 100vh;
+    // display: flex;
+    // align-items:flex-end;
+    // justify-content: center;
+    // overflow: hidden;
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-image: url( "../general/img/background.png" );
   }
 
   .card-frame {

@@ -87,7 +87,7 @@ const Intro = () => {
         {/*<img src={severance} alt=""/>*/}
       </div>
 
-      <div class = "medias">
+      {/* <div class = "medias">
                 <ul>
                   <li> 
                     <a href="https://www.instagram.com/official.mdoc/">
@@ -98,7 +98,7 @@ const Intro = () => {
                       <FontAwesomeIcon icon={faYoutube} size="2x" /></a></li>
                 </ul>
 
-            </div>
+            </div> */}
     </div>
   )
 }

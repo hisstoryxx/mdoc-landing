@@ -81,7 +81,7 @@ const NavBar = () => {
         <img ref={logoRef} className="logo" src={logo} alt="" /></Link>
         <div className={`menu-container ${menuName ? menuName : 'home'}`}>
           <Link ref={homeRef} className="menu home" to={"/"}>홈</Link>
-          <div className="divider"/>
+          {/* <div className="divider"/> */}
           <div className="product-menus">
             {/* <span className="menu label">제품 소개</span> */}
             <div className="menu-wrapper">
@@ -90,10 +90,10 @@ const NavBar = () => {
               <Link ref={desktopRef} className="menu desktop" to={"/product/desktop"}>의료진용</Link>
             </div>
           </div>
-          <div className="divider"/>
+          {/* <div className="divider"/> */}
           {/* <Link ref={contactRef} className="menu contact" to={"/contact"}>문의</Link> */}
           <Link ref={contactRef} className="menu contact" to={"/contact"}>고객센터</Link>
-          <div className="divider"/>
+          {/* <div className="divider"/> */}
           
           <Link ref={contactRef} className="menu contact" to={"/contact"}>
             <div className="down">
