@@ -24,11 +24,16 @@ const menuGroups = [
     ]
   },
   {
-    title: "문의",
+    title: "고객센터",
     menus: [
       {
         // name: "문의하기",
-        name: "고객센터",
+        name: "무료 다운로드 신청",
+        linkUrl: "/contact",
+      },
+      {
+        // name: "문의하기",
+        name: "문의하기",
         linkUrl: "/contact",
       }
     ]
