@@ -214,9 +214,9 @@ const Home = () => {
                 <div className="description">
                 <img className="Img" src={printImg} alt="printImg"/>
                   <div className="first-line">
-                    <span><strong>수가 청구</strong>업무량이  <strong>부담</strong>되고,</span>
+                    <span>수가 청구 <strong>업무량이 많고,</strong></span>
                   </div>
-                  <span>  <strong>인력이</strong> 부족해요 </span>
+                  <span>  <strong>인력이 부족</strong>해요 </span>
                 </div>
                  
                 </div>
@@ -226,7 +226,7 @@ const Home = () => {
                   <div className="description">
                   <img className="Img" src={Goal2Img} alt="printImg"/>
                     <div className="first-line">
-                      <span>보안이 철저한 의료진 양방향 메신저를 개발해 <strong>환자관리 목적의 앱을 제공하자</strong></span>
+                      <span>보안이 철저한 양방향 메신저를 개발해 <strong>의료진용 환자관리 앱을 제공하자</strong></span>
                     </div>
                   </div>
                 </div>
@@ -234,7 +234,7 @@ const Home = () => {
                   <div className="description">
                   <img className="Img" src={callImg} alt="printImg"/>
                     <div className="first-line">
-                      <span>의료진 <strong>개인 연락처</strong>로 연락을 하는 환자가 있어요</span>
+                      <span><strong>의료진 개인 연락처</strong>로 연락을 하는 환자가 있어요</span>
                     </div>          
                   </div>
                 </div>
@@ -244,7 +244,7 @@ const Home = () => {
                  <div className="description">
                   <img className="Img" src={Goal3Img} alt="printImg"/>
                     <div className="first-line">
-                      <span>주마다 반복되는 정기상담 일정을 예약해 <strong>상담시간을 사전에 약속하게 하자</strong></span>
+                      <span>정기상담 <strong>일정을 예약</strong>하고, 알림 기능으로 <strong>상담시간을 리마인드</strong> 하자</span>
                     </div>
                   </div>
                 </div>
@@ -252,7 +252,7 @@ const Home = () => {
                   <div className="description">
                   <img className="Img" src={bookImg} alt="printImg"/>
                     <div className="first-line">
-                      <span>환자분이 <strong>상담일정</strong>을 종종 잊어버리세요</span>
+                      <span>상담일정을 <strong>예측할 수 없고</strong> 종종 <strong>잊어버려요</strong></span>
                     </div>          
                   </div>
                 </div>
@@ -270,7 +270,7 @@ const Home = () => {
                   <div className="description">
                   <img className="Img" src={eduImg} alt="printImg"/>
                     <div className="first-line">
-                      <span>지속적인 <strong>정보제공</strong>이 이루어지지 않아요</span>
+                      <span><strong>지속적인 정보제공</strong>이 이루어지지 않아요</span>
                     </div>          
                   </div>
                 </div>
