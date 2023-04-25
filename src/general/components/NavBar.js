@@ -83,7 +83,7 @@ const NavBar = () => {
           <Link ref={homeRef} className="menu home" to={"/"}>홈</Link>
           <div className="divider"/>
           <div className="product-menus">
-            <span className="menu label">제품 소개</span>
+            {/* <span className="menu label">제품 소개</span> */}
             <div className="menu-wrapper">
               {/* <Link ref={mobileRef} className="menu mobile" to={"/product/mobile"}>환자 • 보호자용</Link> */}
               <Link ref={mobileRef} className="menu mobile" to={"/product/mobile"}>환자용</Link>
