@@ -7,9 +7,9 @@ import desktop from "../general/img/desktop.png";
 const productDetail = {
   "mobile" : [
     {
-      title: "건강 기록",
+      title: "사전문진",
       description:
-        "건강기록을 루틴화하여 효율적인 건강 기록이 가능합니다.\n" +
+        "의료진과 상담을\n" +
         "혈압, 혈당, 복막투석으로 나누어진 카테고리를 제공하며\n" +
         "기록된 데이터는 건강기록 분석탭에서 확인 가능합니다",
       images : [
