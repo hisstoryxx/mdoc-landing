@@ -26,11 +26,11 @@ const menuGroups = [
   {
     title: "고객센터",
     menus: [
-      {
-        // name: "문의하기",
-        name: "무료 다운로드 신청",
-        linkUrl: "/contact",
-      },
+      // {
+      //   // name: "문의하기",
+      //   name: "무료 다운로드 신청",
+      //   linkUrl: "/contact",
+      // },
       {
         // name: "문의하기",
         name: "문의하기",
@@ -95,7 +95,7 @@ const Footer = () => {
             <div class = "media">
                 <ul>
                   <li> 
-                    <a href="https://www.instagram.com/official.mdoc/">
+                    <a href="http://pf.kakao.com/_Rxexexfb">
                     <img className="kakaoIcon" src={Kakao} alt="kakao icon" /></a></li>
                   <li><a href="https://www.instagram.com/official.mdoc/">
                       <FontAwesomeIcon icon={faInstagram} size="2x" /></a></li>
